@@ -1,5 +1,7 @@
 # Current Code
 
+:warning: This example uses bytewax **v0.15.0**, there been a few releases after, and some of the things has changed
+
 ## To Run
 
 #### install prereqs
@@ -8,7 +10,7 @@
 pip install -r requirements.txt
 ```
 
-#### Run redpanda in docker
+#### Run kafka in docker
 
 ```sh
 cd kafka
@@ -26,6 +28,11 @@ python load_data_ordered.py
 ```sh
 jupyter notebook
 ```
+
+:warning: The jupyter kernel should have access to the same libraries which you installed earlier. If you're using virtualenv, you probably would need to install jupyter in the same virtualenv, and install matplotlib as well
+
+Run the notebook `Dataflow-plot.ipynb`
+
 
 #### After running through the notebook, to start the scaled dataflow in another terminal
 
